@@ -1,0 +1,66 @@
+<html>
+ <head>
+   <title> Gackowski 1P</title>
+   <script language="JavaScript">
+      // Wyświetlenie tekstu z niestandardowymi stylami
+      document.write("<div style='text-align: center; margin-top: 50px;'>" + "Wykonał: Kuba Gackowski mój numer w dzienniku 8, czyli <br> mam układ [(8) mod 4=0] układ 4".fontcolor("red").bold().fontsize(6)+ "</div>" + "<br>");
+
+      // Funkcja otwierająca nowe okno z grafiką 1
+      function WinOpen_g1() {
+         window.open("grafika1.html", "okienko1", "toolbar=no,directories=no,menubar=no,height=400,width=110,top=240,left=50");
+      }
+
+      // Funkcja otwierająca nowe okno z grafiką 2
+      function WinOpen_g2() {
+         window.open("grafika2.html", "okienko2", "toolbar=no,directories=no,menubar=no,height=400,width=110,top=240,left=325");
+      }
+
+      // Funkcja otwierająca nowe okno z grafiką 3
+      function WinOpen_g3() {
+         window.open("grafika3.html", "okienko3", "toolbar=no,directories=no,menubar=no,height=400,width=110,top=240,left=600");
+      }
+
+      // Funkcja otwierająca nowe okno z grafiką 4
+      function WinOpen_g4() {
+         window.open("grafika4.html", "okienko4", "toolbar=no,directories=no,menubar=no,height=400,width=110,top=240,left=875");
+      }
+
+      
+      // Funkcja zamykająca bieżące okno
+      function okno_zamknij() {
+         window.close();
+      }
+   </script>
+   <style>
+      /* Wyśrodkowanie przycisków na środku strony */
+      .center {
+         text-align: center;
+         margin-top: 20px;
+      }
+
+      /* Dodanie odstępów między przyciskami */
+      input[type="button"] {
+         margin: 5px;
+      }
+
+      /* Dopasowanie pozycji przycisku zamykającego */
+      .close-btn {
+         margin-top: 30px;
+      }
+   </style>
+ </head>
+ <body>
+   <!-- Wyśrodkowanie przycisków -->
+   <div class="center">
+      <form>
+         <input type="button" name="grafika1" value="grafika1" onclick="WinOpen_g1()">
+         <input type="button" name="grafika2" value="grafika2" onclick="WinOpen_g2()">
+         <input type="button" name="grafika3" value="grafika3" onclick="WinOpen_g3()">
+         <input type="button" name="grafika4" value="grafika4" onclick="WinOpen_g4()">
+         <br>
+         <!-- Wyśrodkowanie i dodanie odstępu przyciskowi zamykającemu -->
+         <input type="button" value="zamknij okno" class="close-btn" onclick="okno_zamknij()">
+      </form>
+   </div>
+ </body>
+</html>
